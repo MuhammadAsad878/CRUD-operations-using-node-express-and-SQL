@@ -1,0 +1,54 @@
+body{
+  display: flex;
+}
+.container{
+  height: 400px;
+  width: 500px;
+  background-color: lightcoral;
+  display: flex;
+  color: white;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  margin-top: 4%;
+  border-radius: 10px;
+  padding: 20px 2px;
+}
+h1{
+  text-align: center;
+  width: 100%;
+  background-color: white;
+  color: lightcoral;
+}
+form{
+  width: 60%;
+  min-width: 400px;
+  max-width: 500px;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+}
+input{
+  border-radius: 50px;
+  width: 70%;
+  height: 20px;
+  padding: 5px 10px;
+  margin: 2px;
+}
+button{
+  width: 50%;
+  height: 30px;
+}
+button:hover{
+  background-color: white;
+  color: royalblue;
+  border: solid 2px white;
+  cursor: pointer;
+}
+button:active{
+  background-color: lightcoral;
+  color: black;
+  border: solid 2px white;
+  cursor: pointer;
+}

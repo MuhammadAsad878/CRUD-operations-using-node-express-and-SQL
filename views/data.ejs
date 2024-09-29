@@ -1,0 +1,30 @@
+<div class="data">
+  <table>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Password</th>
+      <th>Delete</th>
+      <th>Update</th>
+    </tr>
+    <% for(let user of users){ %>
+    <tr>
+      <td><%= user.id %></td>
+      <td><%= user.name %></td>
+      <td><%= user.email %></td>
+      <td><%= user.password %></td>
+      <td>
+        <form action="/user/<%=user.id%>?_method=delete" method="post">
+          <button class="btn-delete">Delete</button>
+        </form>
+      </td>
+      <td>
+        <form action="/update/<%=user.id %>" method="get">
+          <button class="btn-update">Update</button>
+        </form>
+      </td>
+    </tr>
+    <% } %>
+  </table>
+</div>

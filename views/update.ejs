@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UPDATE</title>
+</head>
+<body>
+
+  <form action="/user?_method=PATCH" method="post">
+    <input type="text" readonly name="id" value="<%=id %>">
+    <input type="text" name="name" value="<%=name %>">
+    <button>UPDATE</button>
+  </form>
+  
+</body>
+</html>
